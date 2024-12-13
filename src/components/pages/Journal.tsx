@@ -86,7 +86,7 @@ export default function Journal() {
           {/* New Entry Section */}
           <section className="peaceful-card p-6 space-y-4">
             <div className="flex items-center justify-between mb-4">
-              <h2 className="text-lg font-medium text-neutral-800 dark:text-neutral-100">Today's Reflection</h2>
+              <h2 className="text-lg font-medium text-neutral-800 dark:text-neutral-100">Today&apos;s Reflection</h2>
               <span className="text-sm text-neutral-500 dark:text-neutral-400">
                 {new Date().toLocaleDateString('en-US', {
                   weekday: 'long',

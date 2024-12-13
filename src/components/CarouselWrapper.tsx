@@ -35,7 +35,9 @@ export default function CarouselWrapper() {
   }, [emblaApi])
 
   const scrollTo = (index: number) => {
-    emblaApi && emblaApi.scrollTo(index)
+    if (emblaApi) {
+      emblaApi.scrollTo(index);
+    }
   }
 
   return (
