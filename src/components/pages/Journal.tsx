@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import Header from '@/components/Header'
 import EntryModal from '@/components/EntryModal'
 import ConfirmDialog from '@/components/ConfirmDialog'
 import { JournalEntry } from '@/types/journal'
@@ -158,9 +157,10 @@ export default function Journal() {
               ))}
               
               {entries.length === 0 && (
-                <p className="text-center text-neutral-500 dark:text-neutral-400 py-4">
-                  No entries yet. Start journaling today!
-                </p>
+                <div className="text-center text-gray-500 mt-10">
+                  <p>&quot;Your journal is a sacred space for self-reflection and growth.&quot;</p>
+                  <p className="mt-2">Start your journey of introspection today.</p>
+                </div>
               )}
             </div>
           </section>

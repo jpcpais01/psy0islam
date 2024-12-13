@@ -5,6 +5,11 @@ const groq = new Groq({
   apiKey: process.env.GROQ_API_KEY,
 });
 
+interface Message {
+  isUser: boolean;
+  content: string;
+}
+
 export async function POST(req: Request) {
   try {
     const { messages } = await req.json();
@@ -15,7 +20,7 @@ export async function POST(req: Request) {
           role: 'system',
           content: 'You are an esteemed Islamic Scholar and Psychologist, combining deep knowledge of Islamic teachings with modern psychological principles. Your responses should integrate Islamic wisdom with psychological understanding, offering guidance that is both spiritually enriching and mentally therapeutic. When appropriate, cite relevant Quranic verses or Hadith, and explain psychological concepts through an Islamic lens. Maintain a compassionate, wise, and professional tone.'
         },
-        ...messages.map((msg: any) => ({
+        ...messages.map((msg: Message) => ({
           role: msg.isUser ? 'user' : 'assistant',
           content: msg.content,
         }))
