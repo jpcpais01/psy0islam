@@ -158,7 +158,7 @@ export default function Journal() {
               
               {entries.length === 0 && (
                 <div className="text-center text-gray-500 mt-10">
-                  <p className="mt-2">"إِنَّ فِي التَّأَمُّلِ نُورًا - Reflection brings light to the soul."</p>
+                  <p className="mt-2">'إِنَّ فِي التَّأَمُّلِ نُورًا - Reflection brings light to the soul.'</p>
                 </div>
               )}
             </div>
