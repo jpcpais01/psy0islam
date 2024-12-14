@@ -42,7 +42,7 @@ const SplashScreen = () => {
           animate-pulse
         "
       >
-        PSY0
+        "السَّلامُ عَلَيْكُمْ"
       </div>
     </div>
   );
