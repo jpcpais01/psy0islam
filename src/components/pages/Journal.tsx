@@ -158,8 +158,7 @@ export default function Journal() {
               
               {entries.length === 0 && (
                 <div className="text-center text-gray-500 mt-10">
-                  <p>&quot;Your journal is a sacred space for self-reflection and growth.&quot;</p>
-                  <p className="mt-2">Start your journey of introspection today.</p>
+                  <p className="mt-2">"إِنَّ فِي التَّأَمُّلِ نُورًا - Reflection brings light to the soul."</p>
                 </div>
               )}
             </div>

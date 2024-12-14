@@ -172,7 +172,7 @@ export default function Chat() {
               type="submit"
               className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-xl bg-primary text-white flex items-center justify-center transition-all duration-200 hover:bg-primary/90 hover:scale-105 active:scale-95 shadow-lg shadow-primary/25"
             >
-              <PaperAirplaneIcon className="w-5 h-5 -rotate-45" />
+              <PaperAirplaneIcon className="w-5 h-5" />
             </button>
           </div>
         </div>
